@@ -1,14 +1,20 @@
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 
-export const NavBar = (props: {}) => {
+export const NavBar = ({ title }: { title: string }) => {
   return (
     <div className="flex justify-around items-center text-white">
       <div className="flex text-xl justify-between items-center gap-2">
         <h1>
           Done<span className="font-bold">Deal</span>
         </h1>
-        <div className="bg-white text-black font-bold p-1 rounded">Motors</div>
+        {title.length > 0 ? (
+          <div className="bg-white text-black font-bold p-1 rounded">
+            {title}
+          </div>
+        ) : (
+          ""
+        )}
       </div>
       <div className="flex gap-4 justify-center items-center">
         <div>
