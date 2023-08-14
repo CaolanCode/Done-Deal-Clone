@@ -2,7 +2,8 @@
 
 - A clone of a popular Irish car trading website, [Done Deal](https://www.donedeal.ie).
 
-## Tech 
+## Tech
+
 - NextJS
 - TypeScript
 - PostgreSQL
@@ -18,4 +19,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
