@@ -4,7 +4,7 @@ import { SearchOther } from "./SearchOther";
 
 export const Header = (props: {}) => {
   const activeClass = "underline underline-offset-4 cursor-pointer";
-  const title: string = "Farming";
+  const title: string = "Motor";
   return (
     <div className="bg-header-cars h-[50vh] py-2 bg-cover bg-no-repeat bg-center">
       <NavBar title={title} />
@@ -14,7 +14,7 @@ export const Header = (props: {}) => {
           <div className="cursor-pointer">Marketplace</div>
           <div className="cursor-pointer">Farming</div>
         </div>
-        <SearchOther isFarming={true} />
+        <SearchOther isFarming={false} />
       </div>
     </div>
   );

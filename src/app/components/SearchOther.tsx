@@ -1,6 +1,6 @@
 export const SearchOther = ({ isFarming }: { isFarming: boolean }) => {
-  const renderName = () => {
-    return isFarming ? "Farming" : "DoneDeal";
+  const renderName = (farming: string, marketplace: string) => {
+    return isFarming ? farming : marketplace;
   };
 
   return (
@@ -8,7 +8,7 @@ export const SearchOther = ({ isFarming }: { isFarming: boolean }) => {
       <div className="bg-white flex justify-between">
         <input
           type="text"
-          placeholder={`Search ${renderName()}`}
+          placeholder={`Search ${renderName("Farming", "DoneDeal")}`}
           className="h-12 w-3/4 px-2 border-r-2"
         ></input>
         <select className="h-12 w-1/4 px-2">
@@ -16,7 +16,7 @@ export const SearchOther = ({ isFarming }: { isFarming: boolean }) => {
         </select>
       </div>
       <button className="bg-blue-500 text-white w-full h-12 rounded">
-        Search
+        {renderName("Search Farming", "Search Marketplace")}
       </button>
     </div>
   );
