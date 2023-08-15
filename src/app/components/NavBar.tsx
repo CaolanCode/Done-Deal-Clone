@@ -8,13 +8,7 @@ export const NavBar = ({ title }: { title: string }) => {
         <h1>
           Done<span className="font-bold">Deal</span>
         </h1>
-        {title.length > 0 ? (
-          <div className="bg-white text-black font-bold p-1 rounded">
-            {title}
-          </div>
-        ) : (
-          ""
-        )}
+        <div className="bg-white text-black font-bold p-1 rounded">{title}</div>
       </div>
       <div className="flex gap-4 justify-center items-center">
         <div>
