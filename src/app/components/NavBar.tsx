@@ -1,5 +1,6 @@
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
+import AuthModal from "./AuthModal";
 
 export const NavBar = ({ title }: { title: string }) => {
   return (
@@ -16,8 +17,12 @@ export const NavBar = ({ title }: { title: string }) => {
           Search
         </div>
         <div className="text-lg px-10 py-2 bg-green-500 rounded">Place Ad</div>
-        <div>Log In</div>
-        <div>Sign Up</div>
+        <div>
+          <AuthModal isSignIn={true} />
+        </div>
+        <div>
+          <AuthModal isSignIn={false} />
+        </div>
         <div>
           <MenuIcon />
         </div>
